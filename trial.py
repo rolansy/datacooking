@@ -1,0 +1,10 @@
+import pandas as pd
+datacsv=pd.read_csv("D:\Python\datacooking\Iris_Sample_Data.csv")
+print(datacsv)
+print(type(datacsv))
+dataind=pd.read_csv("D:\Python\datacooking\Iris_Sample_Data.csv",index_col=0,na_values=["??"])
+print(dataind)
+data_xlsx=pd.read_excel("D:/Python/datacooking/Iris_Sample_Data_Excel.xlsx",na_values=["??"],sheet_name="Iris Data",index_col=0)
+print(data_xlsx)
+datatxt=pd.read_table('Iris_Sample_Data_text.txt',delimiter=",")
+print(datatxt)
